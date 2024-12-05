@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singing</title>
+</head>
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        /* background: url('img/5ea9e261af9cb8b05a9812a4_5e28eb8f0ab615412c511cbc_new-dancers-blog-p-1080.jpeg'); */
+        background-repeat: repeat-y;
+        background-image: url(img/wp2575109-hd-wallpaper-dance.jpg);
+        height: max-content;
+    }
+    .left{
+    position: absolute;
+    left: 34px;
+    top: 18px;
+    display: inline-block;
+}
+.right{
+    position: absolute;
+    right: 34px;
+    top: 18px;
+    display: inline-block;
+    
+}
+.left img{
+    width: 84px;
+}
+.right img{
+    width: 48px;
+    padding-top: 14px;
+    padding-left: 6px;
+}
+.centre{
+    display: block;
+    width: 37%;
+    margin: 18px auto;
+    text-align: center;
+}
+.navbar{
+    display: inline-block;
+    text-align: center;
+    
+}
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 12px 10px;
+}
+.navbar li a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+.left img{
+    width: 84px;
+}
+.right img{
+    width: 48px;
+    padding-top: 14px;
+    padding-left: 6px;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar__select{
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 700;
+}
+.navbar__select > option{
+  color: black;
+}
+.navbar > li>::after {
+    content: "";
+    height: 2px;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    transform-origin: left center;
+    left: 10px;
+    right: 0;
+}
+.pb-video-container {
+                padding-top: 20px;
+                background: #bdc3c7;
+                font-family: Lato;
+                margin-top: 50px;
+            }
+        
+            .pb-video {
+                border: 1px solid #e6e6e6;
+                padding: 5px;
+            }
+        
+                .pb-video:hover {
+                    background: #2c3e50;
+                }
+        
+            .pb-video-frame {
+                transition: width 2s, height 2s;
+            }
+        
+                .pb-video-frame:hover {
+                    height: 300px;
+                }
+        
+            .pb-row {
+                margin-bottom: 10px;
+                display:flex;
+            }
+</style>
+<body>
+    <header class="header">
+        <marquee bgcolor:"black" width="100%" height="30"  direction="right" scrollamount="10" >Welcome to Aligarh's no.1 platform </marquee>
+    <div class="centre">
+        <ul class="navbar">
+            <li><a href="ill_legals.html" class="active">Home</li></a>
+            <li><a href="About.html">About Us</li></a>
+            <li><select onchange="location = this.value;" class="navbar__select" for="Cat">
+              <option selected disabled hidden value="Categories">Categories</option>
+              <a href="Dance.html">
+               <option value="Dance.html">Dance </option> </a>
+               <option value="sing.html">Singing</option>
+               <option value="design.html">Designing</option>
+               </select>
+             </li>
+             <li><select onchange="location = this.value;" style="width: 6rem" class="navbar__select" for="join">
+              <option selected disabled hidden value="none">Join Us</option>
+               <option value="regform1.html">Registration</option>
+               <option value="teamjoinform.html">Team Joining </option>
+               <option value="events.html">Event Form </option>
+               </select>
+
+             </li>
+            
+        </ul>
+    </div> <br> <br>
+    <link rel="shortcut icon" href="img/logo.jpg.jpg">
+   
+
+        <div class="left">
+            <img src="img/logo.jpg.jpg" alt="">
+            <div>ILL_LEGALS</div>
+        </div>
+        <div class="right"><a href="https://www.instagram.com/ill_legals/" target="_blank">
+            <img src="img/instagram-png-transparent-1.png" alt="">
+           </a>
+            <br>
+            <a href="https://www.youtube.com/channel/UCY8rVZzikqmS3qHT4g6eAXQ" target="_blank">
+            <img src="img/youtube-play-red-logo-png-transparent-background-6.png" alt="">
+           </a>
+        </div>
+        <div>
+        <h1>Our Latest Upload</h1>
+
+        <video width="50%" height="400" controls style="margin-left: 300px;">
+          <source src="img/rajat_kumarv-20220525-0001.mp4" type="video/mp4">
+          
+        </video>
+        <div class="container-fluid pb-video-container">
+            <div class="col-md-10 col-md-offset-1">
+                <h3 class="text-center" style="font-size:xx-large ; text-align: center;"> Video Gallery</h3>
+                <div class="row pb-row">
+                    <div class="col-md-3 pb-video">
+                        <iframe class="pb-video-frame" width="50%" height="230" src="https://www.youtube.com/embed/ZnEas1KktFA" frameborder="0" allowfullscreen></iframe><br>
+                        <label class="form-control label-warning text-center">Pehli Mohabbat</label>
+                    </div>
+                    <div class="col-md-3 pb-video">
+                        <iframe class="pb-video-frame" width="50%" height="230" src="https://www.youtube.com/embed/MQ0zuz5RMrs" frameborder="0" allowfullscreen></iframe><br>
+                        <label class="form-control label-warning text-center">Patriotic Mashup</label>
+                    </div>
+                    <div class="col-md-3 pb-video">
+                        <iframe class="pb-video-frame " width="50%" height="230" src="https://www.youtube.com/embed/jG8Ej-WGOLk" frameborder="0" allowfullscreen></iframe><br>
+                        <label class="form-control label-warning text-center">Kaun Tujhe (Cover) MS Dhoni</label>
+                    </div>
+                    <div class="col-md-3 pb-video">
+                        <iframe class="pb-video-frame" width="50%" height="230" src="https://www.youtube.com/embed/W892i1oRAGs" frameborder="0" allowfullscreen></iframe><br>
+                        <label class="form-control label-warning text-center">O Behna</label>
+                    </div>
+                </div>
+                <div class="row pb-row">
+                    <div class="col-md-3 pb-video">
+                        <iframe class="pb-video-frame" width="50%" height="230" src="https://www.youtube.com/embed/4pRzaqOt11o" frameborder="0" allowfullscreen></iframe><br>
+                        <label class="form-control label-warning text-center">Vilen-Ek raat</label>
+                    </div>
+                    <div class="col-md-3 pb-video">
+                        <iframe class="pb-video-frame" width="50%" height="230" src="https://www.youtube.com/embed/AC_ZmpVrKRs" frameborder="0" allowfullscreen></iframe><br>
+                        <label class="form-control label-warning text-center">MAA</label>
+                    </div>
+                    <div class="col-md-3 pb-video">
+                        <iframe class="pb-video-frame" width="50%" height="230" src="https://www.youtube.com/embed/QbY4eAchab0" frameborder="0" allowfullscreen></iframe><br>
+                        <label class="form-control label-warning text-center">Shiddat</label>
+                    </div>
+                    <div class="col-md-3 pb-video">
+                        <iframe class="pb-video-frame" width="50%" height="230" src="https://www.youtube.com/embed/8uiK4zx-Ko4" frameborder="0" allowfullscreen></iframe><br>
+                        <label class="form-control label-warning text-center">AMU Tarana</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+                                    </div>
+                                    <h3 style="margin-top: 50px;"> Want to learn?</h3>
+                                    <p style="margin-top: 50px;"> Register Yourself</p>
+                                    <input type="button" value="here">
+</body>
+</html>

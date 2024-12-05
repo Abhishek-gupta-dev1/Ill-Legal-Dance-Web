@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>EVENT Form</title>
+</head>
+<style>
+   /* .container{
+        background-color: white;
+        border: 2px solid black;
+        margin: 50px 225px;
+        padding: 93px;
+        width: 50%;
+        height: 100%;
+        border-radius: 28px;
+        display: inline-block;
+        text-align: center;
+        text-justify: auto;
+    
+    }
+    .btn{
+        font-family: 'Baloo Bhai 2', cursive;
+        align-items: center;
+        border-radius: 15px;
+        cursor: pointer;
+        width: 150px;
+        font-size: 18px;
+        padding: 8px;
+    }
+    */
+    body{
+        font-family: 'Baloo Bhai 2', cursive;
+           color: black;
+        margin: 0px;
+        padding: 0px;
+        background: white;
+        background-image: 100%;
+    }
+    .container categories{
+    
+        font-size: 18px;
+    }
+    .left{
+    position: absolute;
+    left: 34px;
+    top: 18px;
+    display: inline-block;
+}
+.right{
+    position: absolute;
+    right: 34px;
+    top: 18px;
+    display: inline-block;
+    
+}
+.left img{
+    width: 84px;
+}
+.right img{
+    width: 48px;
+    padding-top: 14px;
+    padding-left: 6px;
+}
+.centre{
+    display: block;
+    width: 37%;
+    margin: 18px auto;
+    text-align: center;
+}
+.navbar{
+    display: inline-block;
+    text-align: center;
+    
+}
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navbar li a{
+  color: black;
+  font-weight: 700;
+    text-decoration: none;
+    padding: 12px 10px;
+}
+.navbar li a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+.left img{
+    width: 84px;
+}
+.right img{
+    width: 48px;
+    padding-top: 14px;
+    padding-left: 6px;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar__select{
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 700;
+}
+.navbar__select > option{
+  color: black;
+}
+.navbar > li>::after {
+    content: "";
+    height: 2px;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    transform-origin: left center;
+    left: 10px;
+    right: 0;
+}
+    </style>
+    <body>
+        <header class="header">
+            <marquee bgcolor:"black" width="100%" height="30"  direction="right" scrollamount="10" >Welcome to Aligarh's no.1 platform </marquee>
+        <div class="centre">
+          <ul class="navbar">
+            <li><a href="ill_legals.html" class="active">Home</li></a>
+            <li><a href="About.html">About Us</li></a>
+            <li><select onchange="location = this.value;" class="navbar__select" for="Cat">
+              <option selected disabled hidden value="Categories">Categories</option>
+              <a href="Dance.html">
+               <option value="Dance.html">Dance </option> </a>
+               <option value="sing.html">Singing</option>
+               <option value="design.html">Designing</option>
+               </select>
+             </li>
+             <li><select onchange="location = this.value;" style="width: 6rem" class="navbar__select" for="join">
+              <option selected disabled hidden value="none">Join Us</option>
+               <option value="regform1.html">Registration</option>
+               <option value="teamjoinform.html">Team Joining </option>
+               <option value="events.html">Event Form </option>
+               </select>
+
+             </li>
+            
+        </ul>        </div> <br> <br>
+        <link rel="shortcut icon" href="img/logo.jpg.jpg">
+    
+
+        <div class="left">
+            <img src="img/logo.jpg.jpg" alt="">
+            <div>ILL_LEGALS</div>
+        </div>
+        <div class="right"><a href="https://www.instagram.com/ill_legals/" target="_blank">
+            <img src="img/instagram-png-transparent-1.png" alt="">
+           </a>
+            <br>
+            <a href="https://www.youtube.com/channel/UCY8rVZzikqmS3qHT4g6eAXQ" target="_blank">
+            <img src="img/youtube-play-red-logo-png-transparent-background-6.png" alt="">
+           </a>
+        </div>
+        <div class="container">
+            
+            <fieldset>
+                <div class="container">
+                    
+                    <h1 style="margin-top:50px ;">Lets Enjoy!</h1><br><br>
+                   
+                    <form action="./events.php" method="post" >
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">First Name</label>
+                            <input type="text" name="fName" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Last Name</label>
+                            <input name="lName" type="text" class="form-control" id="inputPassword4">
+                          </div>
+                        </div>
+                        
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4" placeholder="none">Choose event category</label>
+                            <select name="gender" name="categories" id="gender" >
+                              <option name="categories" value="Dance">Dancing</option>
+                              <option name="categories" value="Sing">Singing</option>
+                              <option name="categories" value="Design">Designing</option>
+        
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Do you prefer live event?</label>
+                            <select name="live" id="gender" placeholder="choose">
+                              <option name="live" value="Y">Yes</option>
+                              <option name="live" value="N">No</option>
+                            </select>
+                          </div>
+                        <div class="form-group">
+                          <label for="phone">Phone Number</label>
+                          <input type="text" name="number" class="form-control" id="phone" placeholder="+91-*******">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress2">Address</label>
+                          <input type="text" name="address" class="form-control" id="inputAddress" >
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Event specifications (if any)</label>
+                            <input type="text" name="event" class="form-control" id="inputAddress" >
+                          </div>
+                        <div class="form-row">
+                          
+                        
+                        <button type="submit" class="btn btn-primary">Send</button>
+                      </form>
+                
+                     </div> </fieldset> 
+             </div> 
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing</title>
+</head>
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        /* background: url('img/5ea9e261af9cb8b05a9812a4_5e28eb8f0ab615412c511cbc_new-dancers-blog-p-1080.jpeg'); */
+        background-repeat: repeat-y;
+        background-image: url(img/wp2575109-hd-wallpaper-dance.jpg);
+        height: max-content;
+    }
+    .card-group{
+  margin-top: 50px;
+  margin-left: 150px;
+}
+.card-img-top{
+  padding-left: 80px;
+}
+.card-img-top2{
+  padding-left: 100px;
+}
+h1{
+  margin-top: 50px;
+}
+.card-text{
+  padding-left: 80px;
+  font-size: medium;
+}
+.card-title{
+  padding-left: 80px;
+  font-size: large;
+}
+.card-footer{
+  padding-left: 80px;
+
+}
+.left{
+    position: absolute;
+    left: 34px;
+    top: 18px;
+    display: inline-block;
+}
+.right{
+    position: absolute;
+    right: 34px;
+    top: 18px;
+    display: inline-block;
+    
+}
+.left img{
+    width: 84px;
+}
+.right img{
+    width: 48px;
+    padding-top: 14px;
+    padding-left: 6px;
+}
+.centre{
+    display: block;
+    width: 37%;
+    margin: 18px auto;
+    text-align: center;
+}
+.navbar{
+    display: inline-block;
+    text-align: center;
+    
+}
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navbar li a{
+  color: white;
+    text-decoration: none;
+    padding: 12px 10px;
+}
+.navbar li a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+.left img{
+    width: 84px;
+}
+.right img{
+    width: 48px;
+    padding-top: 14px;
+    padding-left: 6px;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar__select{
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 700;
+}
+.navbar__select > option{
+  color: black;
+}
+.navbar > li>::after {
+    content: "";
+    height: 2px;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    transform-origin: left center;
+    left: 10px;
+    right: 0;
+}
+</style>
+<body>
+    <header class="header">
+        <marquee bgcolor:"black" width="100%" height="30"  direction="right" scrollamount="10" >Welcome to Aligarh's no.1 platform </marquee>
+    <div class="centre">
+      <ul class="navbar">
+        <li><a href="ill_legals.html" class="active">Home</li></a>
+        <li><a href="About.html">About Us</li></a>
+        <li><select onchange="location = this.value;" class="navbar__select" for="Cat">
+          <option selected disabled hidden value="Categories">Categories</option>
+          <a href="Dance.html">
+           <option value="Dance.html">Dance </option> </a>
+           <option value="sing.html">Singing</option>
+           <option value="design.html">Designing</option>
+           </select>
+         </li>
+         <li><select onchange="location = this.value;" style="width: 6rem" class="navbar__select" for="join">
+          <option selected disabled hidden value="none">Join Us</option>
+           <option value="regform1.html">Registration</option>
+           <option value="teamjoinform.html">Team Joining </option>
+           <option value="events.html">Event Form </option>
+           </select>
+
+         </li>
+        
+    </ul>
+    </div> <br> <br>
+    <link rel="shortcut icon" href="img/logo.jpg.jpg">
+    
+
+        <div class="left">
+            <img src="img/logo.jpg.jpg" alt="">
+            <div>ILL_LEGALS</div>
+        </div>
+        <div class="right"><a href="https://www.instagram.com/ill_legals/" target="_blank">
+            <img src="img/instagram-png-transparent-1.png" alt="">
+           </a>
+            <br>
+            <a href="https://www.youtube.com/channel/UCY8rVZzikqmS3qHT4g6eAXQ" target="_blank">
+            <img src="img/youtube-play-red-logo-png-transparent-background-6.png" alt="">
+           </a>
+        </div>
+    <h1 style="margin-top: 150px;">Get our beautiful outfits!</h1>
+    <div class="card-group" style="display:flex" >
+  
+        <div class="card">
+          <img src="img/out1.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Gown with Banarasi touch</h5>
+            <p class="card-text"> Just in Rs. 999/-</p>
+          </div>
+          
+        </div>
+        <div class="card">
+          <img src="img/out4.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MUSICAL CORRIDOR</h5>
+            <p class="card-text">Just in Rs 400/-</p>
+          </div>
+          
+        </div>
+        <div class="card">
+          <img src="img/out3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">NAINA CREATIONS</h5>
+            <p class="card-text">Just in Rs.1599/-</p>
+          </div>
+          
+        </div>
+        
+      </div>
+      <div class="card-group" style="display:flex" >
+  
+        <div class="card">
+          <img src="img/out2.PNG" class="card-img-top2" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ILL_LEGALS</h5>
+            <p class="card-text">Just in Rs. 1499/-</p>
+          </div>
+          
+        </div>
+        <div class="card">
+          <img src="img/out5.PNG" class="card-img-top2" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MUSICAL CORRIDOR</h5>
+            <p class="card-text">Just in Rs.1199/-</p>
+          </div>
+          
+        </div>
+        <div class="card">
+          <img src="img/out6.PNG" class="card-img-top2" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">NAINA CREATIONS</h5>
+            <p class="card-text">Just in Rs. 2199/-</p>
+          </div>
+          
+        </div>  
+      </div>
+      <h3 style="margin-top: 50px;"> Want to buy these amazing outfits?</h3>
+                                    <p style="margin-top: 50px;"> Click below</p>
+                                    <input type="button" value="Here">
+</body>
+</html>
